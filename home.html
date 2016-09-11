@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Crezanza</title>
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--<script src="js/bootstrap.js"></script>-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+
+
+
+
+</head>
+ <body style="margin: 0px;">
+
+
+<section class="container clearfix">
+    <ul class="scene" id="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+        <li data-depth="0.00" class="layer" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="background"></div>
+        </li>
+
+        <li data-depth="0.60" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-29.64px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="kurama"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/kurama.png"></div>
+        </li>
+
+        <li data-invert-y="false" data-depth="0.40" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-19.76px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="landscape"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/landscape.png"></div>
+        </li>
+
+        <li data-depth="0.60" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-29.64px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="grass"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/grass.png"></div>
+        </li>
+
+        <li data-depth="1.20" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-59.28px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="obito"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/obito.png"></div>
+        </li>
+
+        <li data-depth="1.00" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-49.4px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="minato"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/minato.png"></div>
+        </li>
+
+        <li data-depth="2.30" class="layer" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(-113.62px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="leaves"><img src="http://andwecode.com/playground-demo/naruto-with-parallax-js/images/leaves.png"></div>
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+<script>
+
+
+    $('#scene').parallax();
+
+</script>
+
+
+</body>
+
+</html>

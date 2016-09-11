@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Crezanza</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<script src="js/bootstrap.js"></script>-->
+
+    <script src="js/jquery.js"></script>
+
+
+
+</head>
+
+<!--Change this bg image with higer px-->
+<body background="img/blankmap.jpg" style="background-repeat: repeat-y;">
+
+<!--this the first image -->
+<img src="img/blankmap.jpg" id="bg1" />
+
+</body>
+
+
+<script src="js/main.js"></script>
+<script>
+
+
+$('#bg1').click(function() {
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+        $('#bg1').splitImage({steps:2,klass:'sample3'});
+        setTimeout(function(){
+            window.location.href = 'home.html';
+        }, 600);
+    } else {
+        $('#bg1').fadeOut(500, function() {
+            $('#bg1').attr("src","img/home-bg-2.jpg");
+
+            $('#bg1').fadeIn(500);
+        });
+
+    }
+    $(this).data("clicks", !clicks);
+});
+
+</script>
+
+</html>
